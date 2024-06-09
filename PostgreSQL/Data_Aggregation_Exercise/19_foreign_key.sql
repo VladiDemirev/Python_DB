@@ -1,0 +1,11 @@
+CREATE TABLE employees_projects(
+  id INT PRIMARY KEY,
+  employee_id INT,
+  project_id INT,
+  CONSTRAINT fk_employee_id_employees_id
+    FOREIGN KEY(employee_id)
+    REFERENCES employees(id),
+  CONSTRAINT fk_project_id_projects_id
+    FOREIGN KEY(project_id)
+    REFERENCES projects(id)
+);
