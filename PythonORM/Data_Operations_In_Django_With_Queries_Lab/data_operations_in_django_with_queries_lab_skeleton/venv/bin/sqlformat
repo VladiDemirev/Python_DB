@@ -1,0 +1,8 @@
+#!/Users/Vladimir/PycharmProjects/Python/GitHubRepos/Python_DB/PythonORM/Data_Operations_In_Django_With_Queries_Lab/data_operations_in_django_with_queries_lab_skeleton/venv/bin/python3.11
+# -*- coding: utf-8 -*-
+import re
+import sys
+from sqlparse.__main__ import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
